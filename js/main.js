@@ -42,11 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="comment-content">
                     <p>${comment.content}</p>
                 </div>
-                <div class="comment-actions">
-                    <button class="like-btn" onclick="toggleLike(this)">
-                        <span class="like-count">${comment.likes || 0}</span> 点赞
-                    </button>
-                </div>
             `;
             commentsList.appendChild(commentElement);
         });
@@ -82,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
             name: name,
             content: content,
             date: date,
-            likes: 0,
             timestamp: Date.now()
         };
 
@@ -117,21 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         loadComments();
         commentForm.reset();
     });
-
-    // 点赞功能
-    window.toggleLike = function(button) {
-        const likeCount = button.querySelector('.like-count');
-        let comments = JSON.parse(localStorage.getItem('comments') || '[]');
-        const commentIndex = Array.from(button.closest('.comment').parentNode.children)
-            .indexOf(button.closest('.comment'));
-
-        if (commentIndex >= 0 && commentIndex < comments.length) {
-            comments[commentIndex].likes = (comments[commentIndex].likes || 0) + 1;
-            localStorage.setItem('comments', JSON.stringify(comments));
-            likeCount.textContent = comments[commentIndex].likes;
-            button.classList.add('active');
-        }
-    };
 
     // 初始加载评论
     loadComments();

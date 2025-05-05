@@ -386,12 +386,7 @@
 }
 
 /* 统一按钮样式 */
-.reply-btn,
-.like-btn,
-.delete-btn,
 .submit-btn,
-.cancel-reply,
-.submit-reply,
 .prev-page,
 .next-page {
     background-color: #8B4513;
@@ -407,12 +402,7 @@
 }
 
 /* 按钮悬停效果 */
-.reply-btn:hover,
-.like-btn:hover,
-.delete-btn:hover,
 .submit-btn:hover,
-.cancel-reply:hover,
-.submit-reply:hover,
 .prev-page:hover,
 .next-page:hover {
     background-color: #6B3410;
