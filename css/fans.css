@@ -139,11 +139,11 @@
 
 .comment {
     background-color: #fff;
-    padding: 1.2rem;
-    margin-bottom: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: 160px;
+    height: 140px;
 }
 
 .pagination {
@@ -252,9 +252,9 @@
     background-color: #8B4513;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -396,11 +396,11 @@
 .next-page {
     background-color: #8B4513;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: bold;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
