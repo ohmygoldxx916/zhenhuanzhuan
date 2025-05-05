@@ -138,16 +138,12 @@
 }
 
 .comment {
-    background: white;
-    padding: 15px;
-    margin-bottom: 12px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    height: 200px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    background-color: #fff;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 160px;
 }
 
 .pagination {
@@ -253,17 +249,19 @@
 }
 
 .like-btn {
-    background: none;
+    background-color: #8B4513;
+    color: #fff;
     border: none;
-    color: #666;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
     cursor: pointer;
-    padding: 4px 8px;
-    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .like-btn:hover {
-    background: #f0f0f0;
+    background-color: #f0f0f0;
     color: #8B4513;
 }
 
