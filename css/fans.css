@@ -243,46 +243,7 @@
 }
 
 .comment-actions {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: auto;
-}
-
-.like-btn {
-    background-color: #8B4513;
-    color: #fff;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.like-btn:hover {
-    background-color: #f0f0f0;
-    color: #8B4513;
-}
-
-.like-btn.active {
-    color: #e74c3c;
-}
-
-.delete-btn {
-    background: none;
-    border: none;
-    color: #999;
-    cursor: pointer;
-    padding: 4px 8px;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-.delete-btn:hover {
-    color: #e74c3c;
-    background: #fff0f0;
+    display: none;
 }
 
 .reply-btn {
@@ -419,10 +380,6 @@
     box-shadow: none;
 }
 
-.like-btn.active {
-    background-color: #e74c3c;
-}
-
 .cancel-reply {
     background-color: #666;
 }
@@ -433,12 +390,7 @@
 
 /* 评论操作区域 */
 .comment-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #f0f0f0;
+    display: none;
 }
 
 /* 回复表单按钮区域 */
