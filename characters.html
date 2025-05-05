@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色介绍 - 甄嬛传</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/characters.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>甄嬛传</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="characters.html" class="active">角色介绍</a></li>
+                <li><a href="scenes.html">剧情欣赏</a></li>
+                <li><a href="behind.html">幕后故事</a></li>
+                <li><a href="fans.html">粉丝互动</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="characters-main">
+        <div class="sub-nav">
+            <a href="#introduction" class="sub-nav-link active">主要人物介绍</a>
+            <a href="#factions" class="sub-nav-link">主要阵营关系</a>
+        </div>
+
+        <section id="introduction" class="content-section active">
+            <div class="characters-list" id="charactersList">
+                <!-- 角色卡片将通过 JavaScript 动态加载 -->
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-button" id="prevPage" disabled>上一页</button>
+                <span class="pagination-info" id="pageInfo">第 1 页 / 共 3 页</span>
+                <button class="pagination-button" id="nextPage">下一页</button>
+            </div>
+        </section>
+
+        <section id="factions" class="content-section">
+            <div class="factions-list">
+                <div class="faction-card">
+                    <h3>甄嬛阵营</h3>
+                    <div class="faction-members">
+                        <div class="member">
+                            <img src="images/zhenhuan.jpg" alt="甄嬛">
+                            <span>甄嬛</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/cuijinxi.jpg" alt="崔槿汐">
+                            <span>崔槿汐</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/supeisheng.jpg" alt="苏培盛">
+                            <span>苏培盛</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/shenmeizhuang.jpg" alt="沈眉庄">
+                            <span>沈眉庄</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/wenshichu.jpg" alt="温实初">
+                            <span>温实初</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faction-card">
+                    <h3>皇后阵营</h3>
+                    <div class="faction-members">
+                        <div class="member">
+                            <img src="images/queen.jpg" alt="皇后">
+                            <span>皇后</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/anlingrong.jpg" alt="安陵容">
+                            <span>安陵容</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/wenyuan.jpg" alt="瓜尔佳·文鸳">
+                            <span>瓜尔佳·文鸳</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faction-card">
+                    <h3>华妃阵营</h3>
+                    <div class="faction-members">
+                        <div class="member">
+                            <img src="images/huafei.jpg" alt="华妃">
+                            <span>华妃</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/caoqinmo.jpg" alt="曹琴默">
+                            <span>曹琴默</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faction-card">
+                    <h3>其他重要人物</h3>
+                    <div class="faction-members">
+                        <div class="member">
+                            <img src="images/emperor.jpg" alt="雍正帝">
+                            <span>雍正帝</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/guojunwang.jpg" alt="果郡王">
+                            <span>果郡王</span>
+                        </div>
+                        <div class="member">
+                            <img src="images/taihou.jpg" alt="太后">
+                            <span>太后</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 甄嬛传官方网站. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 角色数据
+        const characters = [
+            {
+                name: "甄嬛（钮祜禄·甄嬛）",
+                title: "本剧女主角",
+                description: "大理寺少卿甄远道之女，17岁选秀入宫。初入宫时天真烂漫，为人聪明慧黠，善于察言观色体察人心，口齿伶俐，有女诸葛之称，重情义，为人处世精明而不失天真，温婉大气亦能心狠手辣。因\"纯元故衣\"事件去甘露寺修行，与允礼渐生情愫，后因误传允礼死讯重返皇宫，被赐钮祜禄氏，最终排除万难，成为太后。",
+                image: "images/zhenhuan.jpg"
+            },
+            {
+                name: "爱新觉罗·胤禛",
+                title: "清朝第四位皇帝",
+                description: "勤政爱民，性格多疑。他深谙帝王之术，善于用人，但也因为多疑的性格，常常对身边的人产生猜忌。甄嬛入宫后得倒他的宠爱，但他只把甄嬛视为已故纯元皇后的替身，后不知不觉中爱上甄嬛。",
+                image: "images/emperor.jpg"
+            },
+            {
+                name: "乌拉那拉·宜修",
+                title: "皇后",
+                description: "孝敬完皇后，15岁入侍为侧福晋，子三岁殇。佛口蛇心，表面温柔贤淑，实则性格深沉阴狠，最擅借刀杀人，虽不得雍正宠爱，却深爱其一生，最终因谋害纯元被揭露落得惨淡下场。",
+                image: "images/queen.jpg"
+            },
+            {
+                name: "年世兰",
+                title: "华妃",
+                description: "敦肃皇贵妃，年羹尧妹妹。华妃在剧中虽然坏事做尽，但是反而让人恨不起来，她因其美貌和独特个性而深得皇帝的宠爱，钟爱皇帝一生。个性骄傲，容易嫉妒，不愿他人分宠，常与嫔妃争宠不休。倚仗着自己是年羹尧的妹妹在后宫跋庭嚣张，风头直盖皇后，正因如此，皇帝用欢宜香让她终身不育，最后撞墙而死。",
+                image: "images/huafei.jpg"
+            },
+            {
+                name: "爱新觉罗·胤礼",
+                title: "果郡王",
+                description: "康熙帝第十七子，初为果郡王，后为果亲王。表面放荡不羁，实则深情专一，与甄嬛真心相爱，但有情人难成眷属，最后为甄嬛而死。",
+                image: "images/guojunwang.jpg"
+            },
+            {
+                name: "安陵容",
+                title: "雍正帝妃嫔",
+                description: "县城安比槐之女，选秀时得甄嬛相助最终入选。甄嬛得宠后，心生艳羡，在种种误会与自卑心理的作用下，由妒生恨，在皇后利用下最终走向歧途，成为甄嬛的敌人。",
+                image: "images/anlingrong.jpg"
+            },
+            {
+                name: "沈眉庄",
+                title: "雍正帝妃嫔",
+                description: "惠妃。与甄嬛自幼一起长大，出自名门，典型的大家闺秀，为人颇有气量，大方雍容，敢爱敢恨，重视姐妹之情。初入宫时不谙世事，锋芒毕露，成为最先遭人陷害的对象。后眼见皇帝绝情，从此对他不抱期望。与温实初渐生情愫，并怀上他的孩子，后因血崩而死。",
+                image: "images/shenmeizhuang.jpg"
+            },
+            {
+                name: "温实初",
+                title: "太医",
+                description: "太医院后起之秀，与甄家是世交，同甄嬛一起长大，从心里爱慕甄嬛却不善表达。 甄嬛入宫参加选秀，温实初不得已向其表白却遭拒，实初从此将这份情感深埋心底。医术精湛，甄嬛入宫后，他作为太医时刻守候在甄嬛身边，多次为其化解险情。后因与眉庄交往颇多，渐生情谊，育有一女。",
+                image: "images/wenshichu.jpg"
+            },
+            {
+                name: "崔槿汐",
+                title: "甄嬛侍女",
+                description: "甄嬛侍女，也是甄嬛的良师益友。不论甄嬛得宠失宠亦或是被废出宫，槿汐始终陪伴在侧，照顾她。槿汐不但为甄嬛出谋划策，更每每在关键时刻加以提醒，且必要时还可为甄嬛牺牲自己。后与总管太监苏培盛结为对食夫妇。",
+                image: "images/cuijinxi.jpg"
+            },
+            {
+                name: "苏培盛",
+                title: "总管太监",
+                description: "雍正帝身边的总管太监，为人圆滑世故，善于察言观色。与崔槿汐结为对食夫妇，对甄嬛多有帮助。在甄嬛回宫后，成为其重要助力，帮助甄嬛在后宫中站稳脚跟。",
+                image: "images/supeisheng.jpg"
+            },
+            {
+                name: "乌雅·成璧",
+                title: "雍正帝生母",
+                description: "孝恭仁皇后。满洲正黄旗人，护军参领乌雅·威武之女。母亲为乌拉那拉氏。入宫后为孝昭仁皇后的校书侍女，因温柔谨慎得幸于康熙，虽不十分得宠，但因与汉女嫔妃交好，宽和待下，深得人心，亦得康熙信任。甄嬛入宫，太后眼见后宫风波频起，虽喜甄嬛聪颖，更赞眉庄温厚大方。甄嬛再度回宫后，太后虽然怜惜，却也加强了防范。",
+                image: "images/taihou.jpg"
+            },
+            {
+                name: "叶澜依",
+                title: "雍正帝妃嫔",
+                description: "柱国之女，百骏园驯马女，英姿飒爽、明艳照人。早先认为是甄嬛辜负了果郡王，因而憎恨甄嬛。暗中设计以猫扑向其肚腹，导致甄嬛早产。后得知允礼与甄嬛之间存有深情，毫不考虑地加入甄嬛一党。因痛恨皇帝赐死允礼，叶澜依假意承宠，暗自给皇帝使用暖情香，并骗其服下含有慢性毒药的丹丸，让皇帝沉溺声色，重病不起。",
+                image: "images/yelanyi.jpg"
+            },
+            {
+                name: "瓜尔佳·文鸳",
+                title: "雍正帝妃嫔",
+                description: "瓜尔佳‧鄂敏之女，清高狂妄，依附于皇后，假意与甄嬛交好陷害甄嬛，使甄氏一族一败涂地。后在皇后扶持下成为储秀宫主位，时常拿嫔位身份欺压同住的欣贵人，与安陵容一直面和心不和。因跋扈善妒降为贵人。指控甄嬛与温实初有染不成后被打入冷宫。后家族败落，到养心殿外求情并辱骂熹贵妃，被苏培盛遣侍卫乱棍打死。",
+                image: "images/wenyuan.jpg"
+            },
+            {
+                name: "流朱",
+                title: "甄嬛的贴身侍女",
+                description: "甄嬛陪嫁丫鬟，忠心护主。论穿戴，流朱永远比不上善于打扮的浣碧，也是因为甄嬛的默许和一点姐妹心，浣碧总是如半个主子一般。可是流朱，从来不妒也不在意，她只是那样笑吟吟的，把一份心思，全在甄嬛身上，后为救甄嬛而死。",
+                image: "images/liuzhu.jpg"
+            },
+            {
+                name: "浣碧（钮祜禄·玉隐）",
+                title: "甄嬛的贴身侍女",
+                description: "果郡王嫡福晋钮祜禄氏。甄嬛的贴身丫鬟，也是同父异母的妹妹，因生母是罪臣之女，不得不隐瞒身份，后以义女身份认祖归宗，更名—甄玉隐，嫁于果郡王允礼为侧妃。后来在果郡王葬礼上，她也随之殉夫而去了。",
+                image: "images/huanbi.jpg"
+            },
+            {
+                name: "爱新觉罗·弘历",
+                title: "雍正帝第四子",
+                description: "雍正帝第四子、清高宗乾隆。他是雍正帝做皇子时与宫女李金桂酒后意外所生，自幼不受雍正帝喜爱，一直养在圆明园，后来被接回宫中刻苦读书，却险些被皇后毒死。后认甄嬛为母，被封为和硕宝亲王，登基为帝。",
+                image: "images/sige.jpg"
+            },
+            {
+                name: "甄玉娆",
+                title: "甄嬛妹妹",
+                description: "慎郡王嫡福晋祖氏。甄嬛同母妹，备受甄嬛宠爱，被皇上召进宫陪伴甄嬛，又因灵动可爱，外貌有七八分像纯元皇后，英气妩媚性格又似初入宫时的华妃，被皇帝看中。但与允禧相爱，皇帝忍痛将其赐婚允禧。",
+                image: "images/zhenyurao.jpg"
+            },
+            {
+                name: "耿月宾（端妃）",
+                title: "雍正帝妃嫔",
+                description: "纯懿皇贵妃耿氏。耿德金之女。正直善良，性情稳重端庄、冷静隐忍，与世无争，颇受敬重。曾因给华妃送去安胎药不久后其流产而成报复对象。一直暗中帮助甄嬛，后借甄嬛之手连根除去了华妃一党，并收养曹琴默的女儿温宜公主为养女，从此旁观宫中风波。甄嬛回宫后封为皇贵妃。",
+                image: "images/duanfei.jpg"
+            },
+            {
+                name: "冯若昭（敬妃）",
+                title: "雍正帝妃嫔",
+                description: "敬妃（马常在）。年世兰为侧福晋时，其为房中格格，受尽刁难折磨。人前笨嘴拙舌，实则内敛智慧，隐藏锋芒。虽无生育，但却帮助甄嬛抚育胧月公主。甄嬛回宫后，因想留胧月公主在身边而对皇后陷害甄嬛一事默许，后甄嬛与之谈心后答允将胧月公主长留敬妃身边，而再次对甄嬛死心塌地。在大封六宫时晋封为敬贵妃。",
+                image: "images/jingfei.jpg"
+            },
+            {
+                name: "富察贵人",
+                title: "雍正帝妃嫔",
+                description: "满军旗贵族出身，自大傲慢、恃宠而骄，但性格懦弱胆小，害怕鬼神之说。入宫初期就颇得圣宠，与齐妃交好看不起安陵容。后怀有身孕却在景仁宫赏花之际，被皇后指使安陵容设计被猫扑倒以致小产。暗恨在自己小产时有孕的甄嬛，在甄嬛失宠后与齐妃在长街掌殴甄嬛。甄嬛复宠后，以人彘故事将其吓疯。",
+                image: "images/fuchaguiren.jpg"
+            },
+            {
+                name: "曹琴默",
+                title: "襄嫔（懋嫔）",
+                description: "金柱之女。温宜公主生母，生性聪明狡猾，原依附华妃，为华妃对付其他妃嫔的军师。华妃多次将温宜公主作为争宠的筹码使曹贵人有苦难言、心生叛意。华妃垮台后，其出面揭发华妃恶行，晋封襄嫔。太后认为其背叛旧主心狠手辣，不宜侍奉皇上，故与皇帝在其汤药中下了慢性毒药。死后其女温宜公主交予端妃抚养。",
+                image: "images/caoqinmo.jpg"
+            }
+        ];
+
+        // 分页设置
+        const charactersPerPage = 5;
+        let currentPage = 1;
+        const totalPages = Math.ceil(characters.length / charactersPerPage);
+
+        // 获取DOM元素
+        const charactersList = document.getElementById('charactersList');
+        const prevPageButton = document.getElementById('prevPage');
+        const nextPageButton = document.getElementById('nextPage');
+        const pageInfo = document.getElementById('pageInfo');
+
+        // 更新页面信息
+        function updatePageInfo() {
+            pageInfo.textContent = `第 ${currentPage} 页 / 共 ${totalPages} 页`;
+            prevPageButton.disabled = currentPage === 1;
+            nextPageButton.disabled = currentPage === totalPages;
+        }
+
+        // 显示当前页的角色
+        function showCharacters() {
+            const start = (currentPage - 1) * charactersPerPage;
+            const end = start + charactersPerPage;
+            const currentCharacters = characters.slice(start, end);
+
+            charactersList.innerHTML = currentCharacters.map(character => `
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="${character.image}" alt="${character.name}">
+                    </div>
+                    <div class="character-info">
+                        <h3>${character.name}</h3>
+                        <p class="character-title">${character.title}</p>
+                        <div class="character-description">
+                            <p>${character.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // 初始化页面
+        showCharacters();
+        updatePageInfo();
+
+        // 添加事件监听器
+        prevPageButton.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                showCharacters();
+                updatePageInfo();
+            }
+        });
+
+        nextPageButton.addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showCharacters();
+                updatePageInfo();
+            }
+        });
+
+        // 子导航切换功能
+        const subNavLinks = document.querySelectorAll('.sub-nav-link');
+        const contentSections = document.querySelectorAll('.content-section');
+
+        subNavLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // 移除所有活动状态
+                subNavLinks.forEach(l => l.classList.remove('active'));
+                contentSections.forEach(section => section.classList.remove('active'));
+
+                // 添加当前活动状态
+                link.classList.add('active');
+                const targetId = link.getAttribute('href').substring(1);
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

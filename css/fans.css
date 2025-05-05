@@ -1,0 +1,468 @@
+/* 粉丝互动页面样式 */
+.fans-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    background-color: #f8f4e9;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fans-intro h2 {
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.fans-intro p {
+    color: #666;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fans-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.fans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* 评论区域样式 */
+.comment-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.comment-section h3 {
+    color: #8B4513;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 6rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group textarea {
+    flex: 1;
+    resize: none;
+    min-height: 200px;
+}
+
+.submit-btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    background-color: #8B4513;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.submit-btn:hover {
+    background-color: #6B3410;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* 评论列表样式 */
+.comments-list {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.comments-list h3 {
+    color: #8B4513;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.comments-container {
+    position: absolute;
+    top: 100px;
+    left: 2rem;
+    right: 2rem;
+    bottom: 6rem;
+    overflow-y: auto;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.comment {
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.prev-page,
+.next-page {
+    padding: 1rem 2rem;
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.prev-page:hover,
+.next-page:hover {
+    background-color: #6B3410;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.prev-page:disabled,
+.next-page:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.page-info {
+    color: #A0522D;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 20px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 滚动条样式 */
+.comments-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.comments-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.comments-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.comments-container::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.comment-author {
+    color: #8B4513;
+    font-weight: bold;
+}
+
+.comment-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.comment-content {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.like-btn:hover {
+    background: #f0f0f0;
+    color: #8B4513;
+}
+
+.like-btn.active {
+    color: #e74c3c;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    color: #e74c3c;
+    background: #fff0f0;
+}
+
+.reply-btn {
+    display: none;
+}
+
+.reply-form {
+    display: none;
+}
+
+.reply-form-actions {
+    display: none;
+}
+
+.cancel-reply,
+.submit-reply {
+    display: none;
+}
+
+/* 粉丝互动区域样式 */
+.fans-interaction {
+    margin-top: 3rem;
+}
+
+.fans-interaction h3 {
+    color: #8B4513;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.interaction-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.interaction-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.interaction-card:hover {
+    transform: translateY(-5px);
+}
+
+.interaction-card h4 {
+    color: #8B4513;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.interaction-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.interaction-btn {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.interaction-btn:hover {
+    background-color: #6B3410;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .fans-content {
+        grid-template-columns: 1fr;
+    }
+
+    .interaction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fans-content {
+        padding: 0 1rem;
+    }
+
+    .interaction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comment-section,
+    .comments-list {
+        height: 600px;
+    }
+}
+
+/* 统一按钮样式 */
+.reply-btn,
+.like-btn,
+.delete-btn,
+.submit-btn,
+.cancel-reply,
+.submit-reply,
+.prev-page,
+.next-page {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* 按钮悬停效果 */
+.reply-btn:hover,
+.like-btn:hover,
+.delete-btn:hover,
+.submit-btn:hover,
+.cancel-reply:hover,
+.submit-reply:hover,
+.prev-page:hover,
+.next-page:hover {
+    background-color: #6B3410;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* 特殊状态 */
+.prev-page:disabled,
+.next-page:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.like-btn.active {
+    background-color: #e74c3c;
+}
+
+.cancel-reply {
+    background-color: #666;
+}
+
+.cancel-reply:hover {
+    background-color: #555;
+}
+
+/* 评论操作区域 */
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* 回复表单按钮区域 */
+.reply-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* 分页按钮特殊样式 */
+.prev-page,
+.next-page {
+    min-width: 120px;
+} 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粉丝互动 - 甄嬛传</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fans.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>甄嬛传</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="characters.html">角色介绍</a></li>
+                <li><a href="scenes.html">剧情欣赏</a></li>
+                <li><a href="behind.html">幕后故事</a></li>
+                <li><a href="fans.html" class="active">粉丝互动</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fans-intro">
+            <h2>粉丝互动</h2>
+            <p>与甄嬛传粉丝一起分享观剧心得</p>
+        </section>
+
+        <section class="fans-content">
+            <div class="comment-section">
+                <h3>发表评论</h3>
+                <form class="comment-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="你的昵称" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="comment" placeholder="写下你的评论..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">发表评论</button>
+                </form>
+            </div>
+
+            <div class="comments-list">
+                <h3>最新评论</h3>
+                <div class="comments-container">
+                    <!-- 评论将通过JavaScript动态添加到这里 -->
+                </div>
+                <div class="pagination">
+                    <button class="prev-page">上一页</button>
+                    <span class="page-info">第 1 页</span>
+                    <button class="next-page">下一页</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 甄嬛传官方网站. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

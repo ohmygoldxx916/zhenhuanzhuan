@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甄嬛传 - 官方网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>甄嬛传</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="characters.html">角色介绍</a></li>
+                <li><a href="scenes.html">剧情欣赏</a></li>
+                <li><a href="behind.html">幕后故事</a></li>
+                <li><a href="fans.html">粉丝互动</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 英雄区域 -->
+        <section class="hero">
+            <div class="hero-overlay">
+                <div class="hero-info">
+                    <div class="info-item">
+                        <span class="info-label">集数</span>
+                        <span class="info-number">76</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">豆瓣评分</span>
+                        <span class="info-number">9.3</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">播出时间</span>
+                        <span class="info-number">2011</span>
+                    </div>
+                </div>
+                <p class="hero-description">《甄嬛传》讲述了清朝雍正年间，女主角甄嬛选秀入宫，在皇后、华妃等几方势力夹击与宫闱斗争中，从不谙世事的闺阁少女成长为善于权谋的圣母皇太后的故事。</p>
+            </div>
+        </section>
+
+        <!-- 主要内容区域 -->
+        <section class="main-content">
+            <!-- 特色内容 -->
+            <section class="features">
+                <div class="container">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/characters-main.jpg" alt="角色介绍">
+                            </div>
+                            <div class="feature-content">
+                                <h3>角色介绍</h3>
+                                <p>深入了解剧中人物的性格特点与命运走向，探索每个角色背后的故事与情感。</p>
+                                <a href="characters.html" class="btn">查看详情</a>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/scenes-highlight.jpg" alt="剧情欣赏">
+                            </div>
+                            <div class="feature-content">
+                                <h3>剧情欣赏</h3>
+                                <p>重温经典剧情片段，感受宫廷生活的精彩，每一幕都令人回味无穷。</p>
+                                <a href="scenes.html" class="btn">观看视频</a>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-image">
+                                <img src="images/behind-scenes-main.jpg" alt="幕后故事">
+                            </div>
+                            <div class="feature-content">
+                                <h3>幕后故事</h3>
+                                <p>探索剧集制作背后的精彩故事，揭秘服装道具的精心设计。</p>
+                                <a href="behind.html" class="btn">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 粉丝互动预览 -->
+            <section class="fans-preview">
+                <div class="container">
+                    <h2>粉丝互动</h2>
+                    <div class="fans-content">
+                        <div class="fans-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10万+</span>
+                                <span class="stat-label">粉丝评论</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50万+</span>
+                                <span class="stat-label">点赞数</span>
+                            </div>
+                        </div>
+                        <div class="latest-comments">
+                            <h3>最新评论</h3>
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <span class="comment-author">宫廷剧爱好者</span>
+                                    <span class="comment-date">2024-03-15</span>
+                                </div>
+                                <div class="comment-content">
+                                    <p class="comment-text">这部剧的服装道具太精美了，完美还原了清朝宫廷的奢华。</p>
+                                </div>
+                                <div class="comment-actions">
+                                    <button class="like-btn" onclick="toggleLike(this)">
+                                        <span class="like-count">0</span> 点赞
+                                    </button>
+                                    <button class="reply-btn" onclick="showReplyForm(this)">回复</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: center;">
+                            <a href="fans.html" class="btn">参与讨论</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>《甄嬛传》官方网站，为您提供最全面的剧集资讯。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="characters.html">角色介绍</a></li>
+                        <li><a href="scenes.html">剧情欣赏</a></li>
+                        <li><a href="behind.html">幕后故事</a></li>
+                        <li><a href="fans.html">粉丝互动</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 甄嬛传官方网站. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

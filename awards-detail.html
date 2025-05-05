@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获奖情况 - 甄嬛传</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            bottom: 40px;
+            width: 2px;
+            background: #eee;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-date {
+            color: #999;
+            font-size: 1rem;
+            font-weight: 500;
+            font-family: "KaiTi", "STKaiti", "楷体", "华文楷体", serif;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .timeline-date::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background: #8B0000;
+            border-radius: 50%;
+        }
+
+        .timeline-title {
+            color: #333;
+            font-size: 1.3rem;
+            font-family: "KaiTi", "STKaiti", "楷体", "华文楷体", serif;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .timeline-text {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            display: none;
+            margin-bottom: 15px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .timeline-title:hover .timeline-text {
+            display: block;
+        }
+
+        .timeline-title:hover {
+            color: #8B0000;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                padding: 20px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                padding-left: 60px;
+            }
+
+            .timeline-date::before {
+                left: -40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>甄嬛传</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="characters.html">角色介绍</a></li>
+                <li><a href="plot.html">剧情解析</a></li>
+                <li><a href="scenes.html">剧情欣赏</a></li>
+                <li><a href="behind.html">幕后故事</a></li>
+                <li><a href="fans.html">粉丝互动</a></li>
+                <li><a href="about.html">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="back-button">
+            <a href="about.html" class="btn-back">返回</a>
+        </div>
+
+        <section class="detail-content">
+            <h2>获奖情况</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2011年8月28日</div>
+                    <h3 class="timeline-title">
+                        第1届乐视影视盛典
+                        <div class="timeline-text">
+                            《甄嬛传》获得"最期待古装电视剧"奖，该奖项由网友票选产生，体现了观众对《甄嬛传》未播先火的期待程度
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2012年3月31日</div>
+                    <h3 class="timeline-title">
+                        第2届乐视影视盛典
+                        <div class="timeline-text">
+                            《甄嬛传》凭借其对后宫生活的细致描绘、复杂的人物关系以及男女主角情感纠葛的精彩呈现，荣获最佳古装情感剧奖。同时，郑晓龙凭借其对《甄嬛传》的导演工作，成功塑造出一个细腻、真实且充满戏剧张力的宫廷世界，获电视剧最佳导演奖
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2012年6月11日</div>
+                    <h3 class="timeline-title">
+                        第18届上海电视节白玉兰奖
+                        <div class="timeline-text">
+                            郑晓龙凭借《甄嬛传》获得最佳导演奖，其导演手法细腻地刻画了复杂的人物性格和情感，将宫廷风云展现得淋漓尽致。孙俪也凭借在《甄嬛传》中对甄嬛这一角色的精彩演绎，获得最佳女演员提名，她成功塑造了一个从纯真少女到深宫睿智女性的复杂形象
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2012年8月25日</div>
+                    <h3 class="timeline-title">
+                        第九届全国十佳电视制片表彰大会
+                        <div class="timeline-text">
+                            《甄嬛传》以其优秀的制作水平、深刻的思想内涵和广泛的社会影响力，荣获十佳电视制片优秀电视剧奖。《甄嬛传》的摄影师谢泽凭借其对光影和镜头语言的精准把握，营造出唯美的画面效果，获得优秀摄影师奖。金晔凭借其精湛的剪辑技巧，使《甄嬛传》的叙事节奏更加紧凑有力，获得优秀剪辑师奖
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2012年9月9日</div>
+                    <h3 class="timeline-title">
+                        第26届中国电视金鹰奖
+                        <div class="timeline-text">
+                            《甄嬛传》凭借其在艺术性、思想性和观赏性等多方面的卓越表现，从一众电视剧中脱颖而出，荣获优秀电视剧奖
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2012年10月4日</div>
+                    <h3 class="timeline-title">
+                        2012华鼎奖
+                        <div class="timeline-text">
+                            陈建斌凭借在《甄嬛传》中对雍正这一角色的深刻诠释，成功塑造了一个威严而不失温情的帝王形象，获得最佳电视剧男演员奖
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2012年12月12日</div>
+                    <h3 class="timeline-title">
+                        第3届澳门国际电视节
+                        <div class="timeline-text">
+                            《甄嬛传》以其精湛的制作和深刻的思想内涵，荣获最佳电视剧奖
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2013年1月20日</div>
+                    <h3 class="timeline-title">
+                        中国电视剧导演工作委员会年度评选表彰大会
+                        <div class="timeline-text">
+                            《甄嬛传》以其优秀的制作和广泛的社会影响力，获得2012年度优秀电视剧奖；郑晓龙凭借《甄嬛传》获得2012年度优秀导演奖；孙俪凭借在《甄嬛传》中的出色表现，获得优秀女演员奖
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2013年</div>
+                    <h3 class="timeline-title">
+                        第41届国际艾美奖
+                        <div class="timeline-text">
+                            孙俪凭借在《甄嬛传》中对甄嬛这一角色的精彩演绎，获得该奖项提名，这是中国女演员首次获得此提名，标志着中国电视剧在国际舞台上的影响力不断提升
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 甄嬛传网站. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
